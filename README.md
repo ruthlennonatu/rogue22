@@ -27,7 +27,14 @@ This is the online repository for the DevOps Assignment.
 Our product will be delivered using an Agile methodology that embraces the DevOps culture. Please note that our culture embraces change and these documents are treated as living, breathing artefacts that will be continuously updated.
 
 # Scrum Master
-<>
+Week 5 - Mark
+Week 6 - Thomas
+Week 7 - Aran
+Week 8 - Conor
+Week 9 - Ignacio
+Week 10 - Dylan
+Week 11 - Jamie
+Week 12 - Natasha
 
 # Product Owner
 <>
