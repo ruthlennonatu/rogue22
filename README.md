@@ -109,22 +109,16 @@ Datastore for persistence
 
 # Social Contract
 # Meetings
-Stand-ups will occur on Every <<Date/Time >> during class and <<Date/Time>> using Automated bot.
-The order that people give their updates will be based on <<specify how you chose the order>> of those present at the meeting.
+Stand-ups will occur on every Wednesday, from 11:45 to 12:00 during class and Wednesday, from 11:45 to 12:00 using Automated bot.
+Of those present at the meeting, the order that people give their updates will be based on alphabetical order on a first name basis, that is: Aran, Conor, Dylan, Ignacio, Jamie, Mark, Natasha and Thomas.
 Updates will be in the form: What I've done, Impediments, What I plan to do.
-Sprint planning will occur <<Day/time>> at the end of our sprint <in person/which tool?>.
-Please add and update items within <<issue management tool>> a prior to the sprint planning session.
-Sprint retro will at the end of our sprint on <<Date/Time>> (timebox retro for 15 minutes, to be organised by the scrum master).
-The order that people present their sprint retro updates will be based on <<specify how you chose the order>> of those present at the meeting.
+Sprint planning will occur on every Friday, from 12:00 to 13:00 at the end of our sprint in a team call, using slack.
+Please add and update items within github issues prior to the sprint planning session.
+Sprint retro will occur at the end of our sprint on Fridays, from 11:45 to 12:00 (timebox retro for 15 minutes, to be organised by the scrum master).
+Of those present at the meeting, the order that people present their sprint retro updates will be based on reverse alphabetical order on a first name basis, that is: Thomas, Natasha, Mark, Jamie, Ignacio, Dylan, Conor and Aran.
 Points raised in the sprint retro will be noted and posted on the slack channel by the Scrum Master. The Scrum Master is rotated per team member every week.
-Backlog refinement will happen on <<date/time>> during our sprint.
-Task estimation will be done using <<specify tool/mechanism>>. 
-Come prepared to meetings.
-Be on time for Stand Ups and meetings.
-Mobile phones on silent.
-Everyone has equal voice and valuable contribution.
-Keep your language and tone professional at all times.
-Be honest.
+Backlog refinement will happen on Wednesdays, from 12:05 to 12:50 during our sprint.
+Task estimation will be done using the planning poker technique through a plugin for Jira. Come prepared to meetings. Be on time for Stand Ups and meetings. Mobile phones on silent. Everyone has equal voice and valuable contribution. Keep your language and tone professional at all times. Be honest.
 
 # Communication
 Slack is the preferred method of communication.
