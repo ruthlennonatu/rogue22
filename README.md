@@ -128,9 +128,9 @@ Be honest.
 
 # Communication
 Slack is the preferred method of communication.
-Communication in this order: <<list tools in preferred order>>
-If a demonstration is required use Zoom, record the session and upload to the Slack channel.
-No Slack communications between "<after 7:00>" TBD.
+Communication in this order: Slack, Whatsapp, Microsoft Teams.
+If a demonstration is required use Microsoft Teams / Zoom, record the session and upload to the Slack channel.
+No Slack communications before 9am and after 6pm.
 Raise a problem as soon as you see it.
 Respect each other and understand differences in knowledge.
 All team documents are to be created using Markdown language and shared on GitHub.
