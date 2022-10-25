@@ -37,12 +37,10 @@ Our product will be delivered using an Agile methodology that embraces the DevOp
 - Week 12 - Natasha
 
 # Product Owner
-<>
+Mark
 
 # Rockstars
-<>
-<>
-<>
+Aran, Conor, Dylan, Ignacio, Jamie, Natasha, Thomas
 
 # Project Deadline
 Refer to BB for deadlines
