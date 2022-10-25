@@ -59,9 +59,9 @@ Named queries and database triggers for security
 Regex for cleansing and validation of data before sending to the database.
 
 # Useful Links
-Project Slack: <>
-GitHub: <>
-Jira: <>
+Project Slack: https://app.slack.com/client/T0419S2HV9B/C0473E7SCSY
+GitHub: https://github.com/ruthlennonatu/rogue22
+Jira: <Not yet applicable>
 
 # More Information
 For more information visit our other sections
@@ -81,7 +81,7 @@ Project Log	Team log for the project
 
 # Risk Register
 These are the current Risks on the project, re-aligned on a weekly basis
-
+-   Project incompletion due to time constraints
 
 # Tenants of Design
 Dedication to clean, secure, performant and self documented code
