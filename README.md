@@ -139,22 +139,24 @@ Zero tolerance for bullying.
 # Agile way of working.
 If are assigned a job, take ownership of it and keep it up to date.
 Stick to your agreed working patterns. Let the team know when you are late or going early.
-Keep JIRA board updated at all times.
 Update the Scrum Board as you progress the story i.e. don’t update at standup.
 Don't be afraid to ask for help.
 Don't be afraid to give constructive criticism, as long as it is constructive.
 Solve roadblocks within the team. If the impediment can’t be solved within the team then give it to the Scrum Master.
-Other
-Sprints will start <<date/time>>.
-The Scrum Master role rotates each week, the schedule is available on the on the process section
-<<Tool>> will be used for task management and planning.
-Each member of the team will work <<hours>> per week, unless they are on vacation.
-Branching Strategy
-<<list the branches>>
+Sprints will start at 11.30am on Wednesdays.
+The Scrum Master role rotates each week, the schedule is available on the process section.
+GitHub Project will be used for task management and planning.
+Each member of the team will work 4 hours per week, unless they are on vacation.
+Branching Strategy:
+main<-test<-dev<-feature-{Member Name}-{Work Type}
+
 
 # Estimating Story Points
+Each member must have input in the estimation of story points. 
+Estimated using the Planned Poker extension for Slack. 
+The most common selection will be the story point for that user story.
+User stories with a story point larger than 5, will be split into smaller user stories.
 The teams team's velocity is calculated by the number of story points we achieve on average in the previous sprints.
-
 The teams current story point velocity is "N/A".
 
 # Definition of Ready
