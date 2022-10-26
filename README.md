@@ -102,7 +102,7 @@ Datastore for persistence
     automated creation and deployments
     integrated and automated pipeline (commit -> test -> deploy)
 # Github version control:
-    branches used
+    branches used - Feature, Dev, test, main.
     version/release management
 
 # Agile project management methods/principles (jira)
