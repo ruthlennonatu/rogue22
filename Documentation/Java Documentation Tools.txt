@@ -1,0 +1,72 @@
+Javadoc is a documentation generator for generating API documentation in HTML format from Java source code.
+HTML allows the documentation to be easily hyperlinked together. 
+
+There are several ways of commenting in Java and Javadoc.
+
+//Standard Java single line comment
+
+/*
+*Multiline Java comment
+*/
+
+/**
+ * This is how to comment in Javadoc
+ */
+
+
+
+This tutorial shows how different comments will be seen in Javadoc
+< https://www.baeldung.com/javadoc >
+
+But in summary start by defining a class like so 
+
+
+/**
+* Hero is the main entity we'll be using to . . .
+* 
+* Please see the {@link com.baeldung.javadoc.Person} class for true identity
+* @author Captain America
+* 
+*/
+public class SuperHero extends Person {
+    // fields and methods
+}
+
+
+for any fields declared use
+
+/**
+ * The public name of a hero that is common knowledge
+ */
+private String heroName;
+
+
+and for any methods use
+
+/**
+ * <p>This is a simple description of the method. . .
+ * <a href="http://www.supermanisthegreatest.com">Superman!</a>
+ * </p>
+ * @param incomingDamage the amount of incoming damage
+ * @return the amount of health hero has after attack
+ * @see <a href="http://www.link_to_jira/HERO-402">HERO-402</a>
+ * @since 1.0
+ */
+public int successfullyAttacked(int incomingDamage) {
+    // do things
+    return 0;
+}
+
+Fairly straightforward and makes sense if everyone follows this pattern.
+
+Keep an eye on @commands like 
+@author to define author
+@param for any paramters used by the method
+@return for what the method returns 
+@see for any exceptions thrown etc
+@since so you know what version is used
+
+Custom tags can also be created that can be linked to specific HTML but I doubt we need to use it.
+
+Javadoc can be generated through the command line but most popular IDEs like IntelliJ have it built in
+
