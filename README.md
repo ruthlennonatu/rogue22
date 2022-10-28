@@ -37,7 +37,7 @@ Our product will be delivered using an Agile methodology that embraces the DevOp
 - Week 12 - Natasha
 
 # Product Owner
-Mark Borland
+Mark
 
 # Rockstars
 Aran, Conor, Dylan, Ignacio, Jamie, Natasha, Thomas
@@ -171,4 +171,4 @@ Deployed successfully
 Deployment Tested
 Documentation
 Reviewed, followed and executed by Reviewer
-Working solution over documentation
+Working solution over documentation.
