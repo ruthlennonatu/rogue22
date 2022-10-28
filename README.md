@@ -37,7 +37,7 @@ Our product will be delivered using an Agile methodology that embraces the DevOp
 - Week 12 - Natasha
 
 # Product Owner
-Mark
+Mark Borland
 
 # Rockstars
 Aran, Conor, Dylan, Ignacio, Jamie, Natasha, Thomas
@@ -165,7 +165,7 @@ Enough information to start
 Acceptance criteria is defined
 Definition of Done
 Code
-Min of <<how many?>> reviewers
+Min of 1 reviewers
 Merged into main
 Deployed successfully
 Deployment Tested
