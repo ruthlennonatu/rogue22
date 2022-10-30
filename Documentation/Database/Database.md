@@ -85,5 +85,3 @@ Because an account can be of type customer or admin, a unary relationship is sho
 * UMLet was used to produce this diagram
 
 * "Notes" are added to the diagram for further explanation
-
-testing commit
