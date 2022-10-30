@@ -1,0 +1,6 @@
+After extensive research of database technologies, MySQL seems to be the most applicable to this project.
+
+This is due to the ease of connection with the Java-MySQL connector. https://dev.mysql.com/downloads/connector/j/8.0.html
+
+I know we also have some code from previous projects using this database and Java, so it may also save time and other resources to use this technology once again.
+It gives us a chance to dip into re-use oriented thinking and use it to enhace our DevOps pipeline.
