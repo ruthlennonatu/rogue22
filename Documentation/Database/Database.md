@@ -32,7 +32,7 @@ ORM notation is based off first order predicate logic and set theory. Some core 
 
 ## Rogue22 System ORM
 
-![Rogue22 ORM](https://github.com/L00163199/mytestingrepo/blob/main/rogue22_db_design/rogue22_ORM.png)
+![Rogue22 ORM](https://github.com/ruthlennonatu/rogue22/blob/dev/Documentation/Database/rogue22_ORM.png)
 
 ### Rogue22 ORM Explained
 
@@ -66,7 +66,7 @@ Official site for [conceptual data modeling](http://www.orm.net/#:~:text=Dr%20Te
 
 ## Entity Relationship Diagram
 
-![Rogue22 - ERD](https://github.com/L00163199/mytestingrepo/blob/main/rogue22_db_design/rogue22_highlevel_ERD.png)
+![Rogue22 - ERD](https://github.com/ruthlennonatu/rogue22/blob/dev/Documentation/Database/rogue22_ERD_chennnotation.png)
 
 ## Rogue22 ERD Explained
 
