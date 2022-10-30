@@ -46,7 +46,7 @@ In the ORM as seen above, we have 5 entities.
 
 With the account entity, we can see it is associated with two predicates in the top left corner, but note it is only one entity connecting them. The role identifier, as seen in blue text, "admin" and "customer" indicates a unary relationship. This is because an account can be of type customer or admin, which is why an admin account can manage a customer's account without the need for two individual entities.
 
-In the diagram we can also see that the account entity is associated with another predicate with objectifiers containing other entities (venue and ticket). In the small blue text within the rounded box, words, known as fact types, briefly describe the "fact". An account must be of type customer to make a booking, detailed in the booking will be the where the venue is held (the venue address), described as "...held in..." and the types of tickets selected, "...selected...".
+In the diagram we can also see that the account entity is associated with another predicate with objectifiers containing other entities (venue and ticket). In the small blue text within the rounded box, words, known as fact types, briefly describe the "fact". An account must be of type customer to make a booking, detailed in the booking will be where the venue is held (the venue address), described as "...held in..." and the types of tickets selected, "...selected...".
 
 We can implement objectification to this booking process by wrapping it in a box and giving it it's own fact type as indicated by "Booking" or "Booked" (as a customer will only be in the process of one or the other). The purple line indicates uniqueness, as it covers each predicate within the booking objectification, this shows that each individual booking is unique.
 
@@ -57,6 +57,8 @@ We can implement objectification to this booking process by wrapping it in a box
 * Based on research, there are no free tools specifically to produce an ORM.
 
 * ER & UML diagrams continue to be a more popular approach to designing a database schema.
+
+* Draw.io was used to produce the ORM model.
 
 ## Useful Links
 Document covering ORM syntax and semantics in detail: [ORM abstract syntax and semantics glossary](https://gitlab.com/orm-syntax-and-semantics/orm-syntax-and-semantics-docs)
