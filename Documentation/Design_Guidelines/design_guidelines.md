@@ -4,23 +4,23 @@
 **[Test Design](#test-design)**<br>
 
 
-### Documentation Design
+## Documentation Design
 
-## What is Just Barely Good Enough (JBGE)?
+### What is Just Barely Good Enough (JBGE)?
 
 JBGE is a notion within Agile Modelling stating that Agile Models and documents are sufficient enough for the task at hand.
 
-## Why follow JBGE guidelines?
+### Why follow JBGE guidelines?
 
 Rather than spending too much time producing highly detailed documentation that may never be read or provide any real value, focus on making it simple and easy to read instead.
 
-## JBGE in practice
+### JBGE in practice
 
 Documentation should be considered as "living", constantly developing it when needed gives the documentation longevity. When in practice, focus on the purpose of the document, what is it that you already know and what does the reader need to know. It is important to be minimal, making it easier to understand by saying less.
 
 Develop documentation using live Word documents, or a wiki page can be used as github provides [wikis](https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis) to host documentation, where everyone can collaborate and contribute.
 
-## JBGE summary
+### JBGE summary
 
 * Documentation is considered "living", it should be constantly updated when needed and readers should provide feedback on it.
 
@@ -28,27 +28,27 @@ Develop documentation using live Word documents, or a wiki page can be used as g
 
 * Use collaborative documentation tools such as github wikis or live word documents.
 
-### Database Design
+## Database Design
 
-## Standardization
+### Standardization
 
 The team should all agree on a naming scheme when designing the database, in particular, for the database tables. Schemes such as underscore_case or camelCasing  are appropriate but only one can be chosen.
 
 It is important to have standardization due to the simplicity it brings when querying the database. A team member won't need to waste valuable time recalling if the table attribute is, for example, user_address or userAddress.
 
-## Table names
+### Table names
 
 Database tables will be designed around entities and should have simple names without any unnecessary information, for example "UserTable" has poor naming as table does not provide useful information since we know it is a table for the user entity.
 
-## Column names
+### Column names
 
 Column names within a table should be defined clearly without any room for ambiguity. Including the table name and the attribute name will provide the clarity needed, for example a table named "Customer" and an attribute "Address" should be labelled as "CustomerAddress".
 
-## Data integrity
+### Data integrity
 
 Design should include strong emphasis on the accuracy and consistency of stored data. In most schemas, entities have relationships with other entities, leading to tables referencing other tables. These references can be upheld using foreign keys. Without using foreign keys, data integrity will be at risk, possibly resulting in a row that doesn't exist being referenced. Foreign keys should be named the same as the row they are referring to.
 
-## Database design summary
+### Database design summary
 
 * Standardization must be implemented through the team agreeing on a naming scheme for tables/attributes such as camelCase.
 
@@ -58,9 +58,9 @@ Design should include strong emphasis on the accuracy and consistency of stored 
 
 * When representing unknown values in a database, use NULL instead of empty strings, spaces, etc.
 
-### Test Design
+## Test Design
 
-## Shift-Left testing
+### Shift-Left testing
 
 Shift left is a testing concept within an agile DevOps enviornment that focuses on "pushing" testing to the early stages of the development lifecycle (to the left). This will allow the team to refine code quality through reducing the number bugs with the intent of avoiding critical bugs during the deployment phase as well as ensuring requirements are being met. 
 
@@ -69,13 +69,13 @@ Examples of shift-left testing include:
 * Unit testing
 * Integration testing
 
-## Incorporating the shift-left approach
+### Incorporating the shift-left approach
 
 This approach can be incorporated by ensuring developers take part in testing (testing their code prior to pushing to the main branch) and testers being involved early on in the planning/design phases so that they can construct better tests for the continuous testing stage. 
 
 Static code analysis tools should be used and continuous feedback should be given to both developers and testers to address any gaps in development.
 
-# Test techniques
+### Test techniques
 
 Test creation techniques often include:
 
@@ -91,6 +91,6 @@ Test creation techniques often include:
 * When I submit my personal details
 * Then I receive a registration confirmation email
 
-# Test Case Example
+### Test Case Example
 
 ![Test Case Example](http://tryqa.com/wp-content/uploads/2017/07/Test_case-1024x313.png)
