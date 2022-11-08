@@ -4,3 +4,5 @@ This is due to the ease of connection with the Java-MySQL connector. https://dev
 
 I know we also have some code from previous projects using this database and Java, so it may also save time and other resources to use this technology once again.
 It gives us a chance to dip into re-use oriented thinking and use it to enhace our DevOps pipeline.
+
+MySQL Download link: https://dev.mysql.com/downloads/installer/
