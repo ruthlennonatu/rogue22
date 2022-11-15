@@ -91,11 +91,17 @@ Dedication to clean, secure, performant and self documented code
     performance testing tool to be used
 Documentation / code commenting (javadoc)/seperate branch
 Datastore for persistence
+Ensure that the project is designed with code that is easy to understand amongst all team members
+Dedication to code that is tested effectively and is coded securely.
+Ensure code is functional and working
 
 # Testing:
     Unit testing
     integration testing
     UA
+    Dynamic Testing
+    Static Code Analysis
+    Performance Testing
 # Environments:
     staging and production
     tight configuration management for consistency and reproducibility
