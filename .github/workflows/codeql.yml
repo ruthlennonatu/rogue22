@@ -24,16 +24,16 @@ jobs:
   CodeQL-Build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
     - name: Checkout repo
-    
-    - uses: github/codeql-action/init@v1
+      uses: actions/checkout@v1
+  
     - name: Initialize CodeQL
+      uses: github/codeql-action/init@v1
     
-    - uses: github/codeql-action/autobuild@v1
     - name: Autobuild
+      uses: github/codeql-action/autobuild@v1
     
-    - uses: github/codeql-action/analyze@v1
     - name: Perform Code Analysis
+      uses: github/codeql-action/analyze@v1
           
           
