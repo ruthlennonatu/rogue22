@@ -25,7 +25,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repo
-      uses: actions/checkout@v1
+    - uses: actions/checkout@v1
+      with:
+        languages: java
   
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v1
