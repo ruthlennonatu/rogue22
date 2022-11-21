@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxdevops.loginController">
+   <left>
+      <AnchorPane prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #3e6b4a;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="19.0" layoutY="120.0" text="DevOps Login">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane fx:id="loginMessagelabel" prefHeight="200.0" prefWidth="400.0" style="-fx-background-color: #e1f0e5;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="41.0" layoutY="68.0" text="Username">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="43.0" layoutY="183.0" text="Password">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTextField" layoutX="42.0" layoutY="131.0" prefHeight="25.0" prefWidth="289.0" promptText="username" />
+            <PasswordField fx:id="passwordPasswordField" layoutX="43.0" layoutY="224.0" prefHeight="25.0" prefWidth="288.0" promptText="password" />
+            <Button fx:id="loginButton" layoutX="43.0" layoutY="273.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="25.0" prefWidth="286.0" style="-fx-background-color: #3e6b4a;" text="Login" textFill="#f1f4f2" />
+            <Button fx:id="cancelButton" layoutX="43.0" layoutY="315.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="25.0" prefWidth="286.0" style="-fx-background-color: #3e6b4a;" text="Cancel" textFill="#f1f4f2" />
+            <Label fx:id="loginMessageLabel" layoutX="41.0" layoutY="107.0" textFill="#f24e4e" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
