@@ -30,6 +30,7 @@ public class loginController {
     {
         validateLogin();
 
+
     }
     else{
         loginMessageLabel.setText("Enter valid username and password");
@@ -73,11 +74,13 @@ public class loginController {
             registerStage.setTitle("DevOps");
             registerStage.setScene(scene);
             registerStage.show();
+
         }
         catch(Exception e){
             e.printStackTrace();
             e.getCause();
         }
+
     }
 
 }

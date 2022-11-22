@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxdevops.registerController">
    <children>
       <AnchorPane prefHeight="100.0" prefWidth="600.0" style="-fx-background-color: #3e6b4a;">
@@ -19,37 +18,43 @@
             </Label>
          </children>
       </AnchorPane>
-      <Label layoutX="102.0" layoutY="113.0" text="First Name">
+      <Label layoutX="99.0" layoutY="127.0" text="First Name">
          <font>
             <Font name="Arial Rounded MT Bold" size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="firstNameTextField" layoutX="101.0" layoutY="141.0" prefHeight="25.0" prefWidth="293.0" />
-      <Label layoutX="99.0" layoutY="166.0" text="Last Name">
+      <TextField fx:id="firstNameTextField" layoutX="97.0" layoutY="156.0" prefHeight="25.0" prefWidth="293.0" />
+      <Label layoutX="95.0" layoutY="181.0" text="Last Name">
          <font>
             <Font name="Arial Rounded MT Bold" size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="lastNameTextField" layoutX="99.0" layoutY="188.0" prefHeight="25.0" prefWidth="293.0" />
-      <Label layoutX="101.0" layoutY="216.0" text="Username">
+      <TextField fx:id="lastNameTextField" layoutX="95.0" layoutY="203.0" prefHeight="25.0" prefWidth="293.0" />
+      <Label layoutX="97.0" layoutY="231.0" text="Username">
          <font>
             <Font name="Arial Rounded MT Bold" size="18.0" />
          </font>
       </Label>
-      <TextField fx:id="setusernameTextField" layoutX="101.0" layoutY="238.0" prefHeight="25.0" prefWidth="293.0" />
-      <Label layoutX="103.0" layoutY="267.0" text="Password">
+      <TextField fx:id="setusernameTextField" layoutX="97.0" layoutY="253.0" prefHeight="25.0" prefWidth="293.0" />
+      <Label layoutX="99.0" layoutY="282.0" text="Password">
          <font>
             <Font name="Arial Rounded MT Bold" size="18.0" />
          </font>
       </Label>
-      <PasswordField fx:id="setPasswordPasswordField" layoutX="101.0" layoutY="289.0" prefHeight="25.0" prefWidth="293.0" />
-      <Label layoutX="103.0" layoutY="313.0" text="Confirm Password">
+      <PasswordField fx:id="setPasswordPasswordField" layoutX="97.0" layoutY="304.0" prefHeight="25.0" prefWidth="293.0" />
+      <Label layoutX="99.0" layoutY="328.0" text="Confirm Password">
          <font>
             <Font name="Arial Rounded MT Bold" size="18.0" />
          </font>
       </Label>
-      <PasswordField fx:id="confirmPasswordPasswordField" layoutX="101.0" layoutY="335.0" prefHeight="25.0" prefWidth="293.0" />
-      <Button fx:id="registerButton" layoutX="444.0" layoutY="289.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="119.0" style="-fx-background-color: #3e6b4a;" text="Register" textFill="WHITE" />
-      <Button fx:id="closeButton" layoutX="444.0" layoutY="335.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="119.0" style="-fx-background-color: #3e6b4a;" text="Close" textFill="WHITE" />
+      <PasswordField fx:id="confirmPasswordPasswordField" layoutX="97.0" layoutY="350.0" prefHeight="25.0" prefWidth="293.0" />
+      <Button fx:id="registerButton" layoutX="435.0" layoutY="156.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="84.0" prefWidth="119.0" style="-fx-background-color: #3e6b4a;" text="Register" textFill="WHITE" />
+      <Button fx:id="closeButton" layoutX="435.0" layoutY="253.0" mnemonicParsing="false" onAction="#closeButtonOnAction" prefHeight="33.0" prefWidth="119.0" style="-fx-background-color: #3e6b4a;" text="Close" textFill="WHITE" />
+      <Label fx:id="registrationMessageLabel" alignment="CENTER" layoutX="142.0" layoutY="100.0" prefHeight="17.0" prefWidth="293.0" textFill="#2b9a27">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="passwordMatchLabel" layoutX="270.0" layoutY="331.0" prefHeight="17.0" prefWidth="293.0" textFill="#d72525" />
    </children>
 </AnchorPane>
