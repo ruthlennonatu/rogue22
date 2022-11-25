@@ -122,7 +122,7 @@ In the example tester class above, the assertion is that the result should give 
 
 ### Unsuccessful unit test
 
-To make sure the automated tests are working correctly, an example was used where the expected returned value was 15. This is seen in the image below where the output lets us know that the test has failed and provides details on which test it was.
+To make sure the automated tests are working correctly, an example was used where the expected returned value was 8. This is seen in the image below where the output lets us know that the test has failed and provides details on which test it was.
 
 ![unsuccessfulUnitTest](https://github.com/ruthlennonatu/rogue22/blob/dev/Documentation/Pipeline/unitTests/images/unsuccessfulUnitTest.png)
 <br>Figure 7 - Failed unit test result<br><br>
