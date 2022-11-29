@@ -6,8 +6,17 @@ package main.java.atu;
 public class Booking {
 
     //private Date bookingDate;
+    /**
+     * The customer making the booking
+     */
     private Customer customer;
+    /**
+     * The workshop that is being booked
+     */
     private Workshop workshop;
+    /**
+     * The number of tickets being purchased
+     */
     private int tickets;
 
     public Booking(Customer customer, Workshop workshop, int tickets){
