@@ -1,0 +1,4 @@
+String sql = "SELECT * FROM User WHERE userId = ?"; 
+PreparedStatement stmt = con.prepareStatement(sql); 
+stmt.setString(1, userId); 
+ResultSet rs = prepStmt.executeQuery();

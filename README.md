@@ -171,10 +171,10 @@ Enough information to start
 Acceptance criteria is defined
 Definition of Done
 Code
-Min of <<how many?>> reviewers
+Min of 1 reviewers
 Merged into main
 Deployed successfully
 Deployment Tested
 Documentation
 Reviewed, followed and executed by Reviewer
-Working solution over documentation
+Working solution over documentation.
