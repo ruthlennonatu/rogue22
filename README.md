@@ -94,6 +94,10 @@ Datastore for persistence
 Ensure that the project is designed with code that is easy to understand amongst all team members
 Dedication to code that is tested effectively and is coded securely.
 Ensure code is functional and working
+Concept code should go in the ExampleCode folder
+Documentation of any kind should go in the Documentation folder
+Any actual code should be placed in an actual code folder
+Must always ensure that anything pushed to the github is in it's correct folders pertaining to our folder structure
 
 # Testing:
     Unit testing
