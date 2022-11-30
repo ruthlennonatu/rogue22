@@ -1,0 +1,23 @@
+Production Monitoring Tools
+Monitoring tools allow DevOps teams to react quickly to application performance changes. Developers can shift left to minimize the breaking changes in production. By detecting issues early, teams can deal with them automatically or manually. 
+DevOps monitoring tools typically perform one or more of these functions: 
+Infrastructure monitoring—checks server performance by identifying RAM, CPU, and storage statistics. 
+Network monitoring—checks inbound and outbound data to provide visibility into all network requests. 
+Performance monitoring—measures application performance by querying the server and tracking response times and other metrics.
+Some Examples of monitoring tools are: 
+Prometheus 
+License: Apache License
+Repository: https://github.com/prometheus/prometheus 
+This open source toolkit monitors and provides alerts for containers and microservices. It notifies DevOps teams of issues with APIs and connected services or applications, identifying traffic anomalies that may indicate a security threat. Prometheus supports various graphing and dashboard modes, with metrics to help track business statistics. It can detect targets using service discovery and static configuration. 
+Nagios Core
+License: GNU General Public
+Repository: https://github.com/NagiosEnterprises/nagioscore 
+This open source infrastructure monitoring tool helps organizations track business-critical components like operating systems and network protocols. It generates alerts for component failures and recoveries, providing various monitoring and infrastructure management features. 
+The Nagios Core API can integrate with third-party platforms, allowing teams to transfer data across different systems.
+Splunk
+License: Commercial with open source version
+Repository: https://github.com/splunk 
+This continuous monitoring tool lets organizations monitor the whole application lifecycle, providing real-time monitoring and analysis for cloud and on-premise infrastructure. It offers real-time alerting, scaling, and full-stack visibility in one solution. The Splunk community has thousands of active users and hundreds of integrations.
+
+
+plication performance by querying the server and tracking response times and other metrics. 
