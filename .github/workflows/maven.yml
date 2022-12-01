@@ -10,9 +10,9 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ "wip-codeQL-pipeline-alternative" ]
+    branches: [ "dev" ]
   pull_request:
-    branches: [ "wip-codeQL-pipeline-alternative" ]
+    branches: [ "dev" ]
 
 jobs:
   build:
