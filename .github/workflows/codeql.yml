@@ -25,10 +25,6 @@ jobs:
     name: Analyze
     runs-on: ubuntu-latest
     
-    defaults:
-      run:
-        working-directory: /home/runner/work/
-    
     permissions:
       actions: read
       contents: read
