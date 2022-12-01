@@ -27,7 +27,7 @@ jobs:
     
     defaults:
       run:
-        working-directory: .github/workflows/
+        working-directory: ../../ExampleCode/
     
     permissions:
       actions: read
