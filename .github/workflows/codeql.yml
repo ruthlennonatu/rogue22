@@ -19,15 +19,15 @@ on:
     branches: [ "dev" ]
   schedule:
     - cron: '25 3 * * 1'
+    
+defaults:
+  run:
+    working-directory: ./ExampleCode/dateTest/
 
 jobs:
   analyze:
     name: Analyze
     runs-on: ubuntu-latest
-    
-    defaults:
-      run:
-        working-directory: ./ExampleCode/dateTest/
     
     permissions:
       actions: read
@@ -65,11 +65,11 @@ jobs:
       uses: github/codeql-action/autobuild@v2
       continue-on-error: true
 
-    - if: steps.autobuild.outcome == 'failure'
-      name: Manual Build
-      run: |
-        make bootstrap
-        make release
+    #- if: steps.autobuild.outcome == 'failure'
+     # name: Manual Build
+      #run: |
+       # make bootstrap
+        #make release
 
     # ℹ️ Command-line programs to run using the OS shell.
     # 📚 See https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#jobsjob_idstepsrun
