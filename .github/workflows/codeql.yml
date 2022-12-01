@@ -27,7 +27,7 @@ jobs:
     
     defaults:
       run:
-        working-directory: ../ExampleCode/
+        working-directory: /home/runner/work/
     
     permissions:
       actions: read
