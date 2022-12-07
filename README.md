@@ -119,16 +119,16 @@ Must always ensure that anything pushed to the github is in it's correct folders
 
 # Social Contract
 # Meetings
-Stand-ups will occur on every Wednesday, from 11:45 to 12:00 during class and Wednesday, from 11:45 to 12:00 using Automated bot.
+Stand-ups will occur on every Wednesday, from 11:45 to 12:00 during class and Wednesday.
 Of those present at the meeting, the order that people give their updates will be based on alphabetical order on a first name basis, that is: Aran, Conor, Dylan, Ignacio, Jamie, Mark, Natasha and Thomas.
 Updates will be in the form: What I've done, Impediments, What I plan to do.
-Sprint planning will occur on every Friday, from 12:00 to 13:00 at the end of our sprint in a team call, using slack.
+Sprint planning will occur on every Friday, from 12:00 to 13:00 at the end of our sprint in a team call, using Microsoft Teams.
 Please add and update items within github issues prior to the sprint planning session.
 Sprint retro will occur at the end of our sprint on Fridays, from 11:45 to 12:00 (timebox retro for 15 minutes, to be organised by the scrum master).
 Of those present at the meeting, the order that people present their sprint retro updates will be based on reverse alphabetical order on a first name basis, that is: Thomas, Natasha, Mark, Jamie, Ignacio, Dylan, Conor and Aran.
 Points raised in the sprint retro will be noted and posted on the slack channel by the Scrum Master. The Scrum Master is rotated per team member every week.
 Backlog refinement will happen on Wednesdays, from 12:05 to 12:50 during our sprint.
-Task estimation will be done using the planning poker technique through a plugin for Jira. Come prepared to meetings. Be on time for Stand Ups and meetings. Mobile phones on silent. Everyone has equal voice and valuable contribution. Keep your language and tone professional at all times. Be honest.
+Task estimation will be done using the planning poker technique through a plugin for Slack. Come prepared to meetings. Be on time for Stand Ups and meetings. Mobile phones on silent. Everyone has equal voice and valuable contribution. Keep your language and tone professional at all times. Be honest.
 
 # Communication
 Slack is the preferred method of communication.

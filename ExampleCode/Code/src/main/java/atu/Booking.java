@@ -31,6 +31,10 @@ public class Booking {
     public Customer getCustomer(){
         return customer;
     }
+    
+    public void setCustomer(String Customer){
+        this.customer=customer;
+    }
 
     /**
      * Getter for Workshop
