@@ -1,0 +1,96 @@
+A software bill of materials, often abbreviated as SBOM, is a list of all software components used in an application.
+The SBOM is made up of third-party open-source libraries, vendor-provided packages, and first-party artifacts built by the organization.
+You can basically see it as the full list of ingredients for your applications.
+
+But be careful to not confuse an SBOM with Maven’s Bill Of Materials (BOM).
+In Maven, a BOM is a special kind of POM file where we can centralize dependencies for an application.
+In most cases, these dependencies work well together and should be used as a set, like we see in BOMs used in Spring.
+
+An SBOM is something you create next to your application, so any user or client has a uniform way to find out what your application is using under the hood.
+
+There are multiple reasons for creating an SBOM.
+First of all, you create transparency about what how your application is containing.
+In most Java applications, 80% to 90% of the produced binary consists of other Java packages like libraries and frameworks.
+
+Currently, there are multiple standards for SBOMs.
+The two most commonly used are SPDX and CycloneDX.
+Both of these standards provide a way to show the components your application contains.
+
+
+The Software Package Data Exchange (SPDX) is a Linux Foundation collaborative project that provides an open standard for communicating software bill of material information,
+including provenance, licensing, security, and other related information.
+The SPDX specification is recognized as the international open standard for security, license compliance, and other software supply chain artifacts as ISO/IEC 5962:2021.
+
+CycloneDX is a SBOM standard from the OWASP foundation designed for application security contexts and supply chain component analysis, providing an inventory of all first-party and third-party software components.
+The specification is rich and extends beyond software libraries to standards such as software as a service bill of materials (SaaSBOM), Vulnerability Exploitability Exchange (VEX), and more.
+The CycloneDX project provides standards in XML, JSON, and Protocol Buffers, as well as a large collection of official and community-supported tools that create or interoperate with the standard.
+
+Java is a compiled language, so you should create an SBOM whenever you build a release version of your application.
+Therefore, creating an SBOM when using one of the Java build systems makes a lot of sense, since your build system downloads all the packages you need to compile and build your application.
+By using a plugin for Maven or Gradle, you can easily create SBOMs with every release of your binary either on a single machine or as part of your CI pipeline
+
+SBOM to be added to POM.XML
+<plugins>
+   <plugin>
+       <groupId>org.cyclonedx</groupId>
+       <artifactId>cyclonedx-maven-plugin</artifactId>
+       <version>2.7.1</version>
+       <executions>
+           <execution>
+               <phase>package</phase>
+               <goals>
+                   <goal>makeAggregateBom</goal>
+               </goals>
+           </execution>
+       </executions>
+       <configuration>
+           <projectType>library</projectType>
+           <schemaVersion>1.4</schemaVersion>
+           <includeBomSerialNumber>true</includeBomSerialNumber>
+           <includeCompileScope>true</includeCompileScope>
+           <includeProvidedScope>true</includeProvidedScope>
+           <includeRuntimeScope>true</includeRuntimeScope>
+           <includeSystemScope>true</includeSystemScope>
+           <includeTestScope>false</includeTestScope>
+           <includeLicenseText>false</includeLicenseText>
+           <outputReactorProjects>true</outputReactorProjects>
+           <outputFormat>all</outputFormat>
+           <outputName>CycloneDX-Sbom</outputName>
+       </configuration>
+   </plugin>
+</plugins>
+
+You can configure the CycloneDX plugin in different ways.
+In this case, I bound the makeAggregateBom goal of the plugin to the package phase of Maven.
+#After my JAR is created, the plugin will create an SBOM, taking aggregation into account.
+It excludes the test dependencies and releases the SBOM in both XML and JSON format in my target folder.
+
+Alternatively, there is command line tool available called spdx-sbom-generator.
+This CLI tool can generate SPDX SBOMs for many package managers, including Maven for Java applications.
+
+Calling this tool from the command line without any parameter in the root of my application creates an SBOM for me in the SPDX format.
+Other outputs like JSON are also supported by using a parameter.
+
+./spdx-sbom-generator
+This generated SBOM seems to have all transitive dependencies individually mentioned, as I assumed it should.
+
+The generated package will resemble the following
+
+##### Package representing the jackson-databind
+
+PackageName: jackson-databind
+SPDXID: SPDXRef-Package-jackson-databind-2.13.4
+PackageVersion: 2.13.4
+PackageSupplier: Organization: jackson-databind
+PackageDownloadLocation: https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind/2.13.4
+FilesAnalyzed: false
+PackageChecksum: SHA1: 7d03e73aa50d143b3ecbdea2c0c9e158e5ed8021
+PackageHomePage: NOASSERTION
+PackageLicenseConcluded: NOASSERTION
+PackageLicenseDeclared: NOASSERTION
+PackageCopyrightText: NOASSERTION
+PackageLicenseComments: NOASSERTION
+PackageComment: NOASSERTION
+
+Relationship: SPDXRef-Package-jackson-databind-2.13.4 DEPENDS_ON SPDXRef-Package-jackson-annotations-2.13.4
+Relationship: SPDXRef-Package-jackson-databind-2.13.4 DEPENDS_ON SPDXRef-Package-jackson-core-2.13.4
