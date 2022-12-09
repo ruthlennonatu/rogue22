@@ -29,6 +29,11 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file ExampleCode/dateTest/pom.xml
+      
+    # Automated Junit testing, must have Junit dependency in pom file
+    # Note - failed unit tests should cause the build to fail regardless
+    - name: Run tests with Maven
+      run: mvn -B test --file Code/pom.xml
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     # - name: Update dependency graph
