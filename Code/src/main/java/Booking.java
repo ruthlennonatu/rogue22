@@ -59,7 +59,8 @@ public class Booking {
     }
 
     public void setCustomer(String username){
-        this.username = username;
+        // Will amend this later
+        //this.username = username;
     }
 
     public void setWorkshop(String workshop){
