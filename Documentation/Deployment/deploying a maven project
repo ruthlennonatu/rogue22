@@ -1,0 +1,106 @@
+Deploying a Maven Project
+
+In project development, normally a deployment process consists of the following steps −
+
+Check-in the code from all project in progress into the SVN (version control system) or source code repository and tag it.
+
+Download the complete source code from SVN.
+
+Build the application.
+
+Store the build output either WAR or EAR file to a common network location.
+
+Get the file from network and deploy the file to the production site.
+
+Updated the documentation with date and updated version number of the application.
+
+Often though multiple teams may be involved in the deployment process and because of this stuff can be missed.
+
+The solution is to use Maven
+
+Automate the deployment process by combining the following −
+
+Maven, to build and release projects.
+SubVersion, source code repository, to manage source code.
+Remote Repository Manager (Jfrog/Nexus) to manage project binaries
+
+To do this add the following code to your POM.xml file
+
+<project xmlns = "http://maven.apache.org/POM/4.0.0"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://maven.apache.org/POM/4.0.0
+   http://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+   <groupId>bus-core-api</groupId>
+   <artifactId>bus-core-api</artifactId>
+   <version>1.0-SNAPSHOT</version>
+   <packaging>jar</packaging>
+   <scm>
+      <url>http://www.svn.com</url>
+      <connection>scm:svn:http://localhost:8080/svn/jrepo/trunk/
+      Framework</connection>
+      <developerConnection>scm:svn:${username}/${password}@localhost:8080:
+      common_core_api:1101:code</developerConnection>
+   </scm>
+   <distributionManagement>
+      <repository>
+         <id>Core-API-Java-Release</id>
+         <name>Release repository</name>
+         <url>http://localhost:8081/nexus/content/repositories/
+         Core-Api-Release</url>
+      </repository>
+   </distributionManagement>
+   <build>
+   <plugins>
+            <plugin>
+               <groupId>org.apache.maven.plugins</groupId>
+               <artifactId>maven-release-plugin</artifactId>
+               <version>2.0-beta-9</version>
+               <configuration>
+                  <useReleaseProfile>false</useReleaseProfile>
+                  <goals>deploy</goals>
+                  <scmCommentPrefix>[bus-core-api-release-checkin]-<
+                  /scmCommentPrefix>
+               </configuration>
+            </plugin>
+         </plugins>
+      </build>
+</project>
+
+Using Maven commands with the release plug in
+mvn release:clean  - to clean if not successful
+mvn release:rollback   -to rollback changes if not successful
+mvn release:prepare
+
+Performs multiple number of operations, such as −
+
+Checks whether there are any uncommitted local changes or not.
+
+Ensures that there are no SNAPSHOT dependencies.
+
+Changes the version of the application and removes SNAPSHOT from the version to make release.
+
+Update pom files to SVN.
+
+Run test cases.
+
+Commit the modified POM files.
+
+Tag the code in subversion
+
+Increment the version number and append SNAPSHOT for future release.
+
+Commit the modified POM files to SVN.
+
+mvn release:perform
+
+Checks out the code using the previously defined tag and run the Maven deploy goal, to deploy the war or built artifact to repository.
+
+mvn release:prepare
+Maven will start building the project.
+
+>mvn release:perform
+
+Once build is successful you can verify the uploaded JAR file in your repository.
+
+This is how our pipeline would be able to deploy the project.

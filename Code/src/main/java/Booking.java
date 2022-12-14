@@ -1,4 +1,3 @@
-package main.java.atu;
 /**
  * Booking class for comic booking system
  * @author RogueATU
@@ -13,7 +12,7 @@ public class Booking {
     /**
      * The workshop that is being booked
      */
-    private Workshop workshop;
+    private String workshop;
     /**
      * The number of tickets being purchased
      */
@@ -31,17 +30,13 @@ public class Booking {
     public Customer getCustomer(){
         return customer;
     }
-    
-    public void setCustomer(String Customer){
-        this.customer=customer;
-    }
 
     /**
      * Getter for Workshop
      *
      * @return workshop
      */
-    public Workshop getWorkshop(){
+    public String getWorkshop(){
         return workshop;
     }
 
@@ -52,6 +47,28 @@ public class Booking {
      */
     public int getTickets(){
         return tickets;
+    }
+    /**
+     * To string method for Booking
+     * @return the customer, workshop and amount of tickets
+     */
+
+
+    public void setTickets(int tickets){
+        this.tickets = tickets;
+    }
+
+    public void setCustomer(String username){
+        // Will amend this later
+        //this.username = username;
+    }
+
+    public void setWorkshop(String workshop){
+        this.workshop = workshop;
+    }
+    @Override
+    public String toString(){
+        return this.getCustomer() + " booked " + tickets+ " for " + workshop;
     }
 
 }
